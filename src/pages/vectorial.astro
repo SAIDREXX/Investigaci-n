@@ -1,0 +1,170 @@
+---
+import NavigationBar from "../components/NavigationBar.astro";
+import Layout from "../layouts/Layout.astro";
+---
+
+<Layout
+    title="Cálculo Diferencial"
+    className="bg-green-950 bg-[url('card_bg_good.png')] bg-cover"
+>
+    <NavigationBar />
+
+    <main>
+        <div class="flex items-center justify-center pt-4">
+            <h1 class="text-2xl text-red-500 font-Inter font-bold">Videos</h1>
+        </div>
+        <div class="flex items-center justify-center">
+            <div class="grid grid-cols-3 grid-rows-3 gap-4 p-4">
+                <div>
+                    <iframe
+                        class="rounded-lg"
+                        src="https://drive.google.com/file/d/1voBP5bbXmLA_NJbrSyL1gzZKKc48Cf2s/preview"
+                        title="Cálculo Vectorial - Clase 1"
+                        referrerpolicy="strict-origin-when-cross-origin"
+                        allowfullscreen
+                    >
+                    </iframe>
+                </div>
+                <div>
+                    <iframe
+                        class="rounded-lg"
+                        src="https://drive.google.com/file/d/1pK6fnrCcI__Sw9yDbQ-YwKkXZi0ySet4/preview"
+                        title="Cálculo Vectorial - Clase 2"
+                        referrerpolicy="strict-origin-when-cross-origin"
+                        allowfullscreen
+                    >
+                    </iframe>
+                </div>
+                <div>
+                    <iframe
+                        class="rounded-lg"
+                        src="https://drive.google.com/file/d/18gqT70DeoBThGLWLuw9_TqgwVfOxjlOf/preview"
+                        title="Tema 2 - Curvas planas y coordenadas polares (01)"
+                        referrerpolicy="strict-origin-when-cross-origin"
+                        allowfullscreen
+                    >
+                    </iframe>
+                </div>
+                <div>
+                    <iframe
+                        class="rounded-lg"
+                        src="https://drive.google.com/file/d/1IexSsJ1K6NlCT3Ofw3Wc1V8xqr0qF1Lh/preview"
+                        title="Tema 3 - Funciones vectoriales de una variable real (01)"
+                        referrerpolicy="strict-origin-when-cross-origin"
+                        allowfullscreen
+                    >
+                    </iframe>
+                </div>
+                <div>
+                    <iframe
+                        class="rounded-lg"
+                        src="https://drive.google.com/file/d/1-C87qWF_evDavsZwVInNp4U-TTjVEGdu/preview"
+                        title="Tema 3 - Funciones vectoriales de una variable real (02)"
+                        referrerpolicy="strict-origin-when-cross-origin"
+                        allowfullscreen></iframe>
+                </div>
+                <div>
+                    <iframe
+                        class="rounded-lg"
+                        src="https://drive.google.com/file/d/1JIR5trMYp0F226WPZGr-oKDA1nMuxJVD/preview"
+                        title="Tema 3 - Funciones vectoriales de una variable real (03)"
+                        referrerpolicy="strict-origin-when-cross-origin"
+                        allowfullscreen
+                    >
+                    </iframe>
+                </div>
+                <div>
+                    <iframe
+                        class="rounded-lg"
+                        src="https://drive.google.com/file/d/1m7UsRQnBKhbnFgiTf4alZGe0YEN4a52U/preview"
+                        title="Tema 3 - Funciones vectoriales de una variable real (04)"
+                        referrerpolicy="strict-origin-when-cross-origin"
+                        allowfullscreen
+                    >
+                    </iframe>
+                </div>
+                <div>
+                    <iframe
+                        class="rounded-lg"
+                        src="https://drive.google.com/file/d/1AToPb6j1zdU8iOxkCRbvzv7cV8e8Xf6K/preview"
+                        title="Tema 4 - Funciones reales de varias variables (12)"
+                        referrerpolicy="strict-origin-when-cross-origin"
+                        allowfullscreen
+                    >
+                    </iframe>
+                </div>
+                <div>
+                    <iframe
+                        class="rounded-lg"
+                        src="https://drive.google.com/file/d/1AToPb6j1zdU8iOxkCRbvzv7cV8e8Xf6K/preview"
+                        title="Tema 5 - Integración múltiple (06)"
+                        referrerpolicy="strict-origin-when-cross-origin"
+                        allowfullscreen
+                    >
+                    </iframe>
+                </div>
+            </div>
+        </div>
+        <div class="flex items-center justify-center">
+            <h1 class="text-2xl text-white font-Inter font-bold">Recursos</h1>
+        </div>
+        <div class="flex items-center justify-center">
+            <ul>
+                <li class="p-2">
+                    <a
+                        id="libro-1"
+                        class="text-xl text-lime-300 underline font-bold cursor-pointer"
+                    >
+                        Cálculo Vectorial - Ayres
+                    </a>
+                </li>
+                <li class="p-2">
+                    <a
+                        id="libro-2"
+                        class="text-xl text-lime-300 underline font-bold cursor-pointer"
+                    >
+                        Cálculo Vectorial - Purcell Varberg Rigdon
+                    </a>
+                </li>
+
+                <li class="p-2">
+                    <a
+                        id="libro-3"
+                        class="text-xl text-lime-300 underline font-bold"
+                    >
+                        Cálculo Vectorial, "Un enfoque por competencias" - Delia
+                        A. Galván, Dora Elia Cienfuegos
+                    </a>
+                </li>
+
+                <li class="p-2">
+                    <a
+                        id="libro-4"
+                        class="text-xl text-lime-300 underline font-bold"
+                    >
+                        Cálculo Vectorial, "Una introducción" - Jorge Enrique
+                        Triviño Macias
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </main>
+</Layout>
+<script>
+    document.getElementById("libro-1")!.addEventListener("click", function () {
+        window.location.href =
+            "https://drive.google.com/uc?export=download&id=1dQvJGpzVI1ewsnYU1pUHttPa5aR_earQ";
+    });
+    document.getElementById("libro-2")!.addEventListener("click", function () {
+        window.location.href =
+            "https://drive.google.com/uc?export=download&id=1DdxEpwlNsHVhcXQRCV-rz4eqgY5j_vjW";
+    });
+    document.getElementById("libro-3")!.addEventListener("click", function () {
+        window.location.href =
+            "https://drive.google.com/uc?export=download&id=1dQvJGpzVI1ewsnYU1pUHttPa5aR_earQ";
+    });
+    document.getElementById("libro-4")!.addEventListener("click", function () {
+        window.location.href =
+            "https://drive.google.com/uc?export=download&id=1DdxEpwlNsHVhcXQRCV-rz4eqgY5j_vjW";
+    });
+</script>
